@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-24T22:47:20 IST" name="Suite" finished-at="2025-12-24T22:47:28 IST" duration-ms="7791">
+    <groups>
+    </groups>
+    <test started-at="2025-12-24T22:47:20 IST" name="Test" finished-at="2025-12-24T22:47:28 IST" duration-ms="7791">
+      <class name="api.tests.StoreTestUsingDataDriven">
+        <test-method signature="postData(java.util.Map)[pri:1, instance:api.tests.StoreTestUsingDataDriven@74fe5c40]" started-at="2025-12-24T22:47:21 IST" name="postData" data-provider="getData" finished-at="2025-12-24T22:47:24 IST" duration-ms="3578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Status=placed, Quantity=1, petId=56789, Id=5, testname=postData, execute=yes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postData -->
+        <test-method signature="readData(java.util.Map)[pri:2, instance:api.tests.StoreTestUsingDataDriven@74fe5c40]" started-at="2025-12-24T22:47:24 IST" name="readData" data-provider="getData" finished-at="2025-12-24T22:47:26 IST" duration-ms="1831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Status=placed, Quantity=1, petId=56789, Id=1, testname=readData, execute=yes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readData -->
+        <test-method signature="deleteData(java.util.Map)[pri:3, instance:api.tests.StoreTestUsingDataDriven@74fe5c40]" started-at="2025-12-24T22:47:26 IST" name="deleteData" data-provider="getData" finished-at="2025-12-24T22:47:28 IST" duration-ms="1707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Status=placed, Quantity=1, petId=56789, Id=1, testname=deleteData, execute=yes}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteData -->
+      </class> <!-- api.tests.StoreTestUsingDataDriven -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

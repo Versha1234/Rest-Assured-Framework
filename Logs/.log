@@ -1,0 +1,4 @@
+22:47:21 - api.tests.StoreTestUsingDataDriven -INFO - placing an order for pet
+22:47:24 - api.tests.StoreTestUsingDataDriven -INFO - placed an order for pet
+22:47:24 - api.tests.StoreTestUsingDataDriven -INFO - finding the order
+22:47:26 - api.tests.StoreTestUsingDataDriven -INFO - deleting the order
