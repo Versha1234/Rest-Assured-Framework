@@ -12,18 +12,17 @@ pipeline {
   stages {
     stage('Build - POST') {
       steps {
-        sh 'mvn -v'
-        sh 'mvn clean test -Dtest=postData'
+        bat 'mvn clean test -Dtest=postData'
       }
     }
     stage('Deploy - READ') {
       steps {
-        sh 'mvn test -Dtest=readData'
+        bat 'mvn test -Dtest=readData'
       }
     }
     stage('Cleanup - DELETE') {
       steps {
-        sh 'mvn test -Dtest=deleteData'
+        bat 'mvn test -Dtest=deleteData'
       }
     }
   }
