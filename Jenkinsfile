@@ -1,12 +1,13 @@
 pipeline {
   agent any
   tools {
-    maven 'Maven_3.9.6'   // match your Jenkins tool name
-    jdk 'JDK_21'          // match your Jenkins tool name
+    maven 'MAVEN'   // match your Jenkins tool name
+    jdk 'JAVA'          // match your Jenkins tool name
   }
   options {
     timestamps()
-    ansiColor('xterm')
+    wrap([$class: 'AnsiColorBuildWrapper', colorMapName: 'xterm'])
+
   }
   stages {
     stage('Build - POST') {
