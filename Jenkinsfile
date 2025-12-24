@@ -26,12 +26,5 @@ pipeline {
       }
     }
   }
-  post {
-    success {
-      echo 'Flow complete: POST → READ → DELETE succeeded.'
-    }
-    always {
-      archiveArtifacts artifacts: 'target/surefire-reports/**/*.xml', fingerprint: true
-    }
-  }
+ 
 }
