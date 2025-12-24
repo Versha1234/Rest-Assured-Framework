@@ -26,5 +26,19 @@ pipeline {
       }
     }
   }
- 
+ post {
+  always {
+    // Archive all reports
+    archiveArtifacts artifacts: 'Logs/reports/TestReport-*.html', fingerprint: true
+
+    // Publish the latest HTML report
+    publishHTML([
+      reportDir: 'Logs/reports',
+      reportFiles: 'TestReport-*.html',
+      reportName: 'Latest TestNG Report',
+      keepAll: true,
+      alwaysLinkToLastBuild: true
+    ])
+  }
+}
 }
