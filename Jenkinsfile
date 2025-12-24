@@ -33,7 +33,7 @@ pipeline {
 
     // Publish the latest HTML report
     publishHTML([
-      reportDir: 'Logs/reports',
+      reportDir: 'reports',
       reportFiles: 'TestReport-*.html',
       reportName: 'Latest TestNG Report',
       allowMissing: true,
