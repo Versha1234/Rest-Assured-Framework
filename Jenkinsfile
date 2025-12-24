@@ -36,6 +36,7 @@ pipeline {
       reportDir: 'Logs/reports',
       reportFiles: 'TestReport-*.html',
       reportName: 'Latest TestNG Report',
+      allowMissing: true,
       keepAll: true,
       alwaysLinkToLastBuild: true
     ])
